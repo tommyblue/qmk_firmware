@@ -20,6 +20,9 @@
 
 /* Pointing device configuration. */
 
+// Invert the vertical scrolling direction (_ie._ mimic macOS "natural" scroll direction)
+#define CHARYBDIS_DRAGSCROLL_REVERSE_Y
+
 // Enable use of pointing device on slave split.
 #define SPLIT_POINTING_ENABLE
 
