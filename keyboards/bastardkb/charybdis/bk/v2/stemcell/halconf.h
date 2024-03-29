@@ -1,5 +1,4 @@
 /*
- * Copyright 2021 Quentin LEBASTARD <qlebastard@gmail.com>
  * Copyright 2021 Charly Delay <charly@codesink.dev> (@0xcharly)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,7 +17,8 @@
 
 #pragma once
 
-/* Trackball angle adjustment. */
-#define ROTATIONAL_TRANSFORM_ANGLE -25
-#undef POINTING_DEVICE_INVERT_X
-#define POINTING_DEVICE_INVERT_Y
+#define HAL_USE_PWM TRUE
+#define HAL_USE_SERIAL TRUE
+#define HAL_USE_SPI TRUE
+
+#include_next <halconf.h>

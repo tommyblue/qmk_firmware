@@ -1,5 +1,6 @@
 /*
- * Copyright 2021 Quentin LEBASTARD <qlebastard@gmail.com>
+ * Copyright 2020 Nick Brassel (tzarc)
+ * Copyright 2021 Stefan Kerkmann (@KarlK90)
  * Copyright 2021 Charly Delay <charly@codesink.dev> (@0xcharly)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,7 +19,27 @@
 
 #pragma once
 
-/* Trackball angle adjustment. */
-#define ROTATIONAL_TRANSFORM_ANGLE -25
-#undef POINTING_DEVICE_INVERT_X
-#define POINTING_DEVICE_INVERT_Y
+#include_next <mcuconf.h>
+
+#undef STM32_PWM_USE_TIM2
+#define STM32_PWM_USE_TIM2 TRUE
+
+#undef STM32_PWM_USE_TIM3
+#define STM32_PWM_USE_TIM3 TRUE
+
+#undef STM32_SPI_USE_SPI1
+#define STM32_SPI_USE_SPI1 TRUE
+
+#undef STM32_SPI_SPI1_RX_DMA_STREAM
+#define STM32_SPI_SPI1_RX_DMA_STREAM STM32_DMA_STREAM_ID(2, 0)
+#undef STM32_SPI_SPI1_TX_DMA_STREAM
+#define STM32_SPI_SPI1_TX_DMA_STREAM STM32_DMA_STREAM_ID(2, 3)
+
+#undef STM32_SERIAL_USE_USART1
+#define STM32_SERIAL_USE_USART1 TRUE
+
+#undef STM32_GPT_USE_TIM4
+#define STM32_GPT_USE_TIM4 TRUE
+
+#undef STM32_ST_USE_TIMER
+#define STM32_ST_USE_TIMER 5

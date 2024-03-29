@@ -20,5 +20,3 @@
 
 /* Trackball angle adjustment. */
 #define ROTATIONAL_TRANSFORM_ANGLE -25
-#undef POINTING_DEVICE_INVERT_X
-#define POINTING_DEVICE_INVERT_Y

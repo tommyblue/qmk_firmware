@@ -41,13 +41,13 @@
 // #define MATRIX_ROW_PINS_RIGHT { GP29, GP26, GP5, GP4 }
 
 // // wiring of each half, use the bottom left 6 and the bottom right 6 pins.
-// #define MATRIX_COL_PINS { GP27, GP28, GP21, GP6, GP7, GP7, GP6, GP21, GP28, GP27 }
-// #define MATRIX_ROW_PINS { GP29, GP26, GP5, GP4 }
-// #define MATRIX_ROWS 8
-// #define MATRIX_COLS 10
+#define MATRIX_COL_PINS { GP27, GP28, GP21, GP6, GP7, GP7, GP6, GP21, GP28, GP27 }
+#define MATRIX_ROW_PINS { GP29, GP26, GP5, GP4 }
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 10
 
-#define SOFT_SERIAL_PIN GP1
-// #define SERIAL_USART_TX_PIN GP1
-// #define SERIAL_USART_RX_PIN GP1
+// #define SOFT_SERIAL_PIN GP1
+#define SERIAL_USART_TX_PIN GP1
+#define SERIAL_USART_RX_PIN GP1
 // #define SERIAL_PIO_USE_PIO1
 // #define SPLIT_USB_DETECT

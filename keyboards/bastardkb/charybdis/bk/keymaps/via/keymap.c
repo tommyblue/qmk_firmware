@@ -250,6 +250,12 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 #    endif // CHARYBDIS_AUTO_SNIPING_ON_LAYER
 #endif     // POINTING_DEVICE_ENABLE
 
+#ifdef RGB_MATRIX_ENABLE
+// Forward-declare this helper function since it is defined in
+// rgb_matrix.c.
+void rgb_matrix_update_pwm_buffers(void);
+#endif
+
 void keyboard_post_init_user(void) {
   // Customise these values to desired behaviour
   debug_enable=true;

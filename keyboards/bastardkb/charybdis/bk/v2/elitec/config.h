@@ -1,6 +1,5 @@
 /*
- * Copyright 2021 Quentin LEBASTARD <qlebastard@gmail.com>
- * Copyright 2021 Charly Delay <charly@codesink.dev> (@0xcharly)
+ * Copyright 2022 Charly Delay <charly@codesink.dev> (@0xcharly)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +17,8 @@
 
 #pragma once
 
-/* Trackball angle adjustment. */
-#define ROTATIONAL_TRANSFORM_ANGLE -25
-#undef POINTING_DEVICE_INVERT_X
-#define POINTING_DEVICE_INVERT_Y
+/* Handedness. */
+#define MASTER_RIGHT
+
+/* PMW3360 settings. */
+#define POINTING_DEVICE_CS_PIN F0
