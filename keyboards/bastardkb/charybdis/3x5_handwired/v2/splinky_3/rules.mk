@@ -13,8 +13,8 @@ POINTING_DEVICE_ENABLE = yes # Enable trackball
 POINTING_DEVICE_DRIVER = pmw3360
 
 SERIAL_DRIVER = vendor
-SERIAL_USART_TX_PIN = GP1
-SPLIT_TRANSPORT = serial_usart
+# SERIAL_USART_TX_PIN = GP1
+# SPLIT_TRANSPORT = serial_usart
 # SOFT_SERIAL_PIN = GP1
 # SPLIT_TRANSPORT = serial # ['custom', 'i2c', 'serial', 'serial_usart']
 

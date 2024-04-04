@@ -9,11 +9,7 @@
         },
         "sleep": true
     },
-    "split": {
-        "transport": {
-            "sync": {
-                "matrix_state": true
-            }
-        }
+    "build": {
+        "lto": true
     }
 }

@@ -3,18 +3,21 @@
     "usb": {
         "device_version": "1.0.0"
     },
-    "matrix_pins": {
-        "cols": ["GP28", "GP21", "GP6", "GP7", "GP8"],
-        "rows": ["GP26", "GP5", "GP4", "GP9"]
-    },
     "diode_direction": "ROW2COL",
     "features": {
-        "bootmagic": true,
+        "bootmagic": false,
         "command": false,
         "console": true,
-        "extrakey": true,
+        "extrakey": false,
         "mousekey": false,
         "nkro": false
+    },
+    "split": {
+        "transport": {
+            "sync": {
+                "matrix_state": true
+            }
+        }
     },
     "processor": "RP2040",
     "bootloader": "rp2040"
