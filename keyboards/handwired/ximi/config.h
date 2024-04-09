@@ -3,22 +3,6 @@
 
 #pragma once
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
-
-/* disable debug print */
-//#define NO_DEBUG
-
-/* disable print */
-//#define NO_PRINT
-
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-
 /* Handedness. */
 #define MASTER_RIGHT
 
@@ -29,10 +13,13 @@
 
 /* SPI & PMW3360 settings. */
 #define SPI_DRIVER SPID0
-#define SPI_SCK_PIN GP22
-#define SPI_MISO_PIN GP20
-#define SPI_MOSI_PIN GP23
-#define POINTING_DEVICE_CS_PIN GP16
+#define SPI_SCK_PIN GP23
+#define SPI_MISO_PIN GP21
+#define SPI_MOSI_PIN GP20
+#define POINTING_DEVICE_CS_PIN GP22
+// #define SPLIT_POINTING_ENABLE
+// #define POINTING_DEVICE_RIGHT
+#define POINTING_DEVICE_DEBUG
 
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
